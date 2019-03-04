@@ -1,7 +1,7 @@
 .header {
     background-color: black;
     width: 100%;
-    height: 80px;
+    height: 50px;
   }
   
 .content {
@@ -12,16 +12,16 @@
 
 .content input {
   position: relative;
-  top: 50px;
-  right: -520px;
+  top: 30px;
+  right: -420px;
   width: 250px;
   height: 25px;
 }
 
 .content button {
   position: relative;
-  top: 50px;
-  right: -530px;
+  top: 30px;
+  right: -440px;
   padding: 4px;
 }
   
@@ -31,20 +31,24 @@
   height: 80px;
 }
 
+.logo {
+  background-image: url("TMDB_Logo.png");
+  background-repeat: no-repeat;
+  height: 65px;
+  margin-left: 10px;
+  position: relative;
+  top: 15px;
+}
+
 .movieimg img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-style: solid;
   border-width: 1px;
   border-color: black;
   position: absolute;
-  top: 300px;
-  left: 400px;
+  top: 150px;
+  left: 50px;
 }
 
-.search {
-  position: relative;
-  top: 50px;
-  left: 500px;
-  color: white;
-}
+

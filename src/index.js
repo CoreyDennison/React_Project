@@ -3,10 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import './reset.css';
 import './box.css';
-import TMDB_Logo from './TMDB_Logo.png';
-import blank from './blank.jpg'
+import blank from './blank.jpg';
 
-class HeaderFooter extends React.Component {
+class Header extends React.Component {
     render() {
       return (
         <div className = 'header'>
@@ -26,11 +25,21 @@ class HeaderFooter extends React.Component {
     }
   }
 
-  class MovieImgs extends React.Component {
+  class MovieImg extends React.Component {
     render() {
       return (
-        <div className = 'movieimg'> 
-          <img src={blank} alt='Blank'/>
+        <div className="movieimg">
+          <img src={blank} alt='Blank'  />
+       </div>
+      )
+    }
+  }
+
+  class Footer extends React.Component {
+    render() {
+      return (
+        <div className = 'footer'>
+          <div className = 'logo' />
         </div>
       )
     }
@@ -38,13 +47,10 @@ class HeaderFooter extends React.Component {
 
   ReactDOM.render(
     <div>
-      <HeaderFooter />
-      <Content>
-        <MovieImgs />
-      </Content>
-      <HeaderFooter>
-        <img src={TMDB_Logo} alt='Logo' />
-      </HeaderFooter>
+      <Header />
+      <Content />
+      <MovieImg />
+      <Footer />
     </div>,
 
     document.getElementById('root')
