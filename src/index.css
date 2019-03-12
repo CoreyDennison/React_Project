@@ -1,52 +1,62 @@
-.header {
+.headerfooter {
     background-color: black;
     width: 100%;
-    height: 50px;
+    height: 90px;
   }
-  
+
+.headerfooter h1 {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  padding-top: 30px; 
+  padding-left: 20px;
+}
+
 .content {
   background-color: #DEDEDE ; 
   width: 100%;
-  height: 920px;
+  height: 940px;
 }
 
 .content input {
   position: relative;
   top: 30px;
-  right: -420px;
+  right: -660px;
   width: 250px;
-  height: 25px;
+  height: 28px;
 }
 
 .content button {
   position: relative;
   top: 30px;
-  right: -440px;
+  right: -680px;
   padding: 4px;
 }
   
 .footer {
   background-color: black;
   width: 100%;
-  height: 80px;
+  height: 100px;
 }
 
 .logo {
   background-image: url("TMDB_Logo.png");
   background-repeat: no-repeat;
-  height: 65px;
+  height: 75px;
   margin-left: 10px;
   position: relative;
   top: 15px;
 }
 
-.content ul {
+.content ul li{
+  margin-top: 10px;
+}
+
+.row ul {
+  float: left;
   font-family: sans-serif;
   margin-top: 70px;
   margin-right: 100px;
   margin-left: 50px;
-}
-
-.content ul li{
-  margin-top: 10px;
 }
