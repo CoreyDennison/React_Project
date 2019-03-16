@@ -14,6 +14,8 @@ class Header extends React.Component {
     render() {
       return (
         <div className = 'headerfooter'>
+          <div className = "film">          
+          </div>
           <h1>Movie Search</h1>
         </div>
       )
@@ -36,11 +38,10 @@ class Content extends React.Component {
     const movieName = this.state.searchValue;
     const tmdb_url = `https://api.themoviedb.org/3/search/movie?api_key=ec4d5ba75bc6742169af2ca01826ade6&language=en-US&query=${movieName}`
     const res = await axios.get(tmdb_url);
-    //shows top 10 results
+    //shows top 6 results
     const movieResults = res.data.results.slice(0,10)
 
     movieResults.forEach((movie) => {
-      var movieYear = movie.release_date.slice(0,4)
       movie.poster_src = "http://image.tmdb.org/t/p/w185" + movie.poster_path
     })
 
