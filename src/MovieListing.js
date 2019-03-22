@@ -1,5 +1,6 @@
 import React from 'react'
 
+//<ul> to contain and display fetched items
 class MovieListing extends React.Component {
     render() {
         return <ul key={this.props.movie.id}>

@@ -6,10 +6,6 @@ import './box.css';
 import MovieListing from './MovieListing.js'
 import axios from 'axios'
 
-// https://api.themoviedb.org/3/search/movie?api_key=ec4d5ba75bc6742169af2ca01826ade6&language=en-US&query=${blade}&page=1&include_adult=false
-// fetch(url).then(response => response.json()).then(data => setState)
-// http://image.tmdb.org/t/p/w185/ prepended to all relatives url got back
-
 class Header extends React.Component {
     render() {
       return (
@@ -38,7 +34,7 @@ class Content extends React.Component {
     const movieName = this.state.searchValue;
     const tmdb_url = `https://api.themoviedb.org/3/search/movie?api_key=ec4d5ba75bc6742169af2ca01826ade6&language=en-US&query=${movieName}`
     const res = await axios.get(tmdb_url);
-    //shows top 6 results
+    //shows top 10 results
     const movieResults = res.data.results.slice(0,10)
 
     movieResults.forEach((movie) => {
@@ -91,3 +87,5 @@ ReactDOM.render (
 
   document.getElementById('root')
 );
+
+//References: https://www.youtube.com/watch?v=bqSSLr8A8PU&t=3004s
