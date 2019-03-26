@@ -88,4 +88,10 @@ ReactDOM.render (
   document.getElementById('root')
 );
 
-//References: https://www.youtube.com/watch?v=bqSSLr8A8PU&t=3004s
+/* 
+References: https://www.youtube.com/watch?v=bqSSLr8A8PU&t=3004s 
+
+GitHub: https://github.com/CoreyDennison/React_Project
+Heroku: https://dashboard.heroku.com/apps/moviesearchapp-reactjs
+WordPress blog: https://coreydennison.wordpress.com/2019/03/17/react-s-p-a/
+*/
