@@ -23,8 +23,6 @@ class Content extends React.Component {
     super(props)
 
     this.state = {films: null, searchValue: ''};
-
-    this.doSearch()
     //Strictly binds "this" to "Content" class
     this.doSearch = this.doSearch.bind(this);
     this.updateInput = this.updateInput.bind(this);
